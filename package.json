@@ -1,0 +1,11 @@
+{
+  "name": "olx-inventory",
+  "version": "1.0.0",
+  "description": "creating an olx inventory management system using rest api and backend services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anmol Sankadiya",
+  "license": "ISC"
+}
