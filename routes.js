@@ -8,4 +8,7 @@ const inventoryController = new InventoryController();
 router.post('/inventory', inventoryController.createInventory.bind(inventoryController));
 
 router.put('/inventory/:sku', inventoryController.updateInventory.bind(inventoryController));
+
+
+router.delete('/inventory/:sku', inventoryController.deleteInventory.bind(inventoryController));
 module.exports = router;
