@@ -30,5 +30,16 @@ class InventoryController {
         }
     }
 
+    async deleteInventory(req, res) {
+        try {
+            const InventoryModel = this.inventoryModel.getModel();
+            const sku = req.params.sku;
+            await InventoryModel.findOneAndDelete({ sku });
+            res.json({ message: 'Inventory deleted successfully' });
+        } catch (err) {
+            res.status(400).json({ message: err.message });
+        }
+    }
+
 }
 module.exports = InventoryController;
