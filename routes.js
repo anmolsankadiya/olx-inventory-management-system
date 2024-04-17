@@ -1,5 +1,5 @@
 import express from 'express';
-import InventoryController from '../controller/inventoryController.js';
+import InventoryController from './inventoryController.js';
 
 class Routes{
 

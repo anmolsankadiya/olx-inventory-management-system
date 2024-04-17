@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import routes from './routes/Routes.js';
+import routes from './routes.js';
 
 class Server {
     constructor() {
